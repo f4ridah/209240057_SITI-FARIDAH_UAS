@@ -1,0 +1,370 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #ffe6f0; /* Pink pastel */
+  color: #333;
+  padding-bottom: 50px;
+}
+
+/* Header */
+header {
+  background-color: #ff66b2;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Sections */
+main {
+  padding: 30px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  color: #ff3399;
+  margin-bottom: 10px;
+}
+
+/* Produk */
+.produk-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.produk {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.produk img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.produk h3 {
+  margin: 10px 0;
+}
+
+.produk p {
+  margin: 5px 0;
+}
+
+.produk button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ff66b2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.produk button:hover {
+  background-color: #ff3399;
+}
+
+/* Kontak */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #ff66b2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #ff3399;
+}
+
+/* Keranjang */
+#keranjang ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+#total-harga {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #ff66b2;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .produk-container {
+    grid-template-columns: 1fr;
+  }
+}
+/* Perkecil form kontak */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+form label,
+form input,
+form textarea,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form button {
+  width: auto;
+  background: #ff69b4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#kontak {
+  text-align: center;
+}
+/* tentang-kami & Keranjang di Tengah */
+#tentang-kami, 
+#keranjang {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 50px auto; /* Tengah + jarak bawah */
+}
+
+#info  {
+  margin-top: 10px;
+}
+
+#keranjang ul {
+  margin-top: 20px;
+}
+
+#keranjang p#total-harga {
+  margin-top: 10px;
+  font-weight: bold;
+}
+#tentang-kami {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 50px auto; /* Tengah + jarak bawah */
+}
+
+#tentang-kami p {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* Bagian Banner Beranda */
+#beranda {
+  background: #ffe6f0;
+  text-align: center;
+  padding: 50px 20px;
+  margin-bottom: 50px;
+}
+
+.banner {
+  display: inline-block;
+  max-width: 800px;
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.banner-text {
+  padding: 30px 20px 10px 20px;
+}
+
+.banner-text h2 {
+  font-size: 28px;
+  color: #ff3399;
+  margin-bottom: 10px;
+}
+
+.banner-text p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.produk-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px; /* Tambahkan ini */
+  margin: 0 auto;    /* Tengah otomatis */
+}
+.produk {
+  background: #fff;
+  border-radius: 12px; /* Tambah lebih bulat */
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+/* Form checkout jadi modal tengah */
+#form-checkout {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 999;
+  max-width: 400px;
+  width: 90%;
+}
+/* Link Lihat Detail Produk biar jaraknya rapi */
+.detail-link {
+  display: inline-block;   /* Biar bisa diatur margin */
+  margin-top: 10px;        /* Jarak ke atas (bisa diubah 5px kalau mau lebih rapat) */
+  color: #333;             /* Warna link (opsional) */
+  text-decoration: none;   /* Biar tidak underline kalau mau */
+}
+
+.detail-link:hover {
+  text-decoration: underline; /* Saat di-hover tetap bisa underline */
+}
+.detail-produk {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Tengah horizontal */
+  text-align: center;  /* Tengah teks */
+  max-width: 600px;
+  margin: 50px auto;   /* Tengah halaman + jarak atas bawah */
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.detail-produk img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.detail-info h2 {
+  color: #ff3399;
+  margin-bottom: 10px;
+}
+
+.detail-info p {
+  margin-bottom: 10px;
+}
+/* Tombol Tambahkan ke Keranjang di halaman detail produk */
+.detail-produk button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ff66b2; /* Sama seperti tombol Beli */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.detail-produk button:hover {
+  background-color: #ff3399; /* Hover sama */
+}
+/* Tombol kembali di halaman detail */
+.detail-produk .btn-kembali {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #fff;     /* Putih */
+  color: #ff66b2;             /* Pink pastel sebagai teks */
+  border: 2px solid #ff66b2;  /* Biar keliatan frame */
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.detail-produk .btn-kembali:hover {
+  background-color: #ff66b2;  /* Hover pink */
+  color: #fff;                /* Teks jadi putih di hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

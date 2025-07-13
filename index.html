@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Toko Faridah - Produk skincare berkualitas harga terjangkau">
+  <title>Official Store Faridah</title>
+   <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="tampilkanKeranjang()">
+  <header>
+    <h1>Official Store Faridah</h1>
+    <nav>
+      <ul>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#tentang-kami">tentang-kami</a></li>
+        <li><a href="#keranjang">Keranjang</a></li>
+        <li><a href="#kontak">kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+  <section id="beranda">
+     <div class="banner">
+      <div class="banner-text">
+       <h2>Selamat Datang di Toko Kami</h2>
+       <p>Kami menyediakan produk berkualitas dengan harga terjangkau!</p>
+    </div>
+     <img src="" alt=""class="">
+     </div>
+</section>
+
+    <section id="produk">
+      <h2>Produk Kami</h2>
+      <div class="produk-container">
+
+        <!-- Produk 1 -->
+        <div class="produk">
+          <img src="images/produk1.jpg" alt="Produk 1"style="width: 300px;height: 300px;">
+          <h3>G2G Face Wash Milk Amino Acids
+          </h3>
+          <p>Rp42.500</p>
+          <p>Pencuci wajah G2G berfungsi untuk membersihkan kotoran, minyak, dan sisa makeup, serta membantu menjaga kulit tetap segar dan lembap.<p>
+          <button onclick="tambahKeKeranjang('G2G Face Wash Milk Amino Acids', 42500)">tambahkan ke keranjang</button>
+          <p id="infoproduk1"style="display: none; color: green;">✅ Ditambahkan ke Keranjang</p>
+          <br>
+          <a href="produk/produk1.html">lihat Detail Produk</a>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="produk">
+          <img src="images/produk2.jpg" alt="Produk 2"style="width: 300px;height: 300px;">
+          <h3>G2G Mask Stick </h3>
+          <p>Rp39.000</p>
+          <p>Masker wajah G2G membantu membersihkan pori-pori, mengangkat sel kulit mati, dan menutrisi kulit agar tampak lebih cerah dan segar.</p>
+          <button onclick="tambahKeKeranjang('Mask Stick G2G', 39000)">tambahkan ke keranjang</button>
+          <br>
+          <a href="produk/produk2.html" class="detail-link">Lihat Detail Produk</a>
+        </div>
+
+        <!-- Produk 3 -->
+        <div class="produk">
+          <img src="images/produk3.jpg" alt="Produk 3"style="width: 300px;height: 300px;">
+          <h3>G2G Brightening Moisturizer </h3>
+          <p>Rp45.000</p>
+          <p>Moisturizer G2G digunakan untuk melembapkan kulit, menjaga elastisitas, dan membuat kulit terasa halus dan sehat.</p>
+          <button onclick="tambahKeKeranjang('Brightening Moisturizer G2G', 45000)">tambahkan ke keranjang</button>
+          <br>
+          <a href="produk/produk3.html" class="detail-link">Lihat Detail Produk</a>
+        </div>
+
+           <!-- Produk 4 -->
+        <div class="produk">
+          <img src="images/produk4.jpg" alt="Produk 4">
+          <h3>G2G Brightening Toner</h3>
+          <p>Rp45.000</p>
+          <p>Toner G2G berfungsi untuk membersihkan sisa kotoran, menyeimbangkan pH kulit, melembapkan, dan membantu mencerahkan wajah.</p>
+          <button onclick="tambahKeKeranjang('G2G Brightening Toner', 45000)">tambahkan ke keranjang</button>
+          <br>
+          <a href="produk/produk4.html" class="detail-link">Lihat Detail Produk</a>
+        </div>
+
+         <!-- Produk 5 -->
+        <div class="produk">
+          <img src="images/produk5.jpg" alt="Produk 5">
+          <h3>G2G Micellar Water Cherry Blassom Betaine</h3>
+          <p>Rp49.000</p>
+          <p>Micellar Water G2G digunakan untuk membersihkan makeup, minyak, dan kotoran tanpa membuat kulit kering.</p>
+          <button onclick="tambahKeKeranjang('G2G Micellar Water Cherry Blassom Betaine', 49000)">tambahkan ke keranjang</button>
+          <br>
+          <a href="produk/produk5.html" class="detail-link">Lihat Detail Produk</a>
+        </div>
+
+         <!-- Produk 6 -->
+        <div class="produk">
+          <img src="images/produk6.jpg" alt="Produk 6"style="width: 300px;height: 300px;">
+          <h3>G2G Brightening Pemogranate Serum </h3>
+          <p>Rp39.000</p>
+          <p>Moisturizer G2G menjaga hidrasi kulit sepanjang hari, membuat kulit terasa lembut, halus, dan tampak sehat.</p>
+          <button onclick="tambahKeKeranjang('G2G Brightening Pemogranate Serum ', 39000)">tambahkan ke keranjang</button>
+          <br>
+          <a href="produk/produk6.html" class="detail-link">Lihat Detail Produk</a>
+        </div>
+
+         <!-- Produk 7 -->
+        <div class="produk">
+          <img src="images/produk7.jpg" alt="Produk 7"style="width: 300px;height: 300px;">
+          <h3>G2G Peeling Ekspoliasi</h3>
+          <p>Rp47.000</p>
+          <p>Exfoliator G2G berfungsi untuk mengangkat sel kulit mati, membersihkan pori-pori, dan membantu kulit tampak lebih halus dan cerah.</p>
+          <button onclick="tambahKeKeranjang('G2G Peeling EksPoliasi', 47000)">tambahkan ke keranjang</button>
+          <br>
+          <a href="produk/produk7.html" class="detail-link">Lihat Detail Produk</a>
+        </div>
+
+         <!-- Produk 8 -->
+        <div class="produk">
+          <img src="images/produk8.jpg" alt="Produk 8"style="width: 300px;height: 300px">
+          <h3>G2G Body Serum </h3>
+          <p>Rp59.000</p>
+          <p>Body Serum G2G digunakan untuk menutrisi dan melembapkan kulit tubuh, membantu mencerahkan, dan membuat kulit terasa lebih halus.</p>
+          <button onclick="tambahKeKeranjang('G2G Body Serum', 59000)">tambahkan ke keranjang</button>
+          <br>
+          <a href="produk/produk8.html" class="detail-link">Lihat Detail Produk</a>
+        </div>
+
+         <!-- Produk 9 -->
+        <div class="produk">
+          <img src="images/produk9.jpg" alt="Produk 9">
+          <h3>G2G Light Sunscreen Gel</h3>
+          <p>Rp34.000</p>
+          <p>G2G Sunscreen Gel ringan SPF 50 PA+++, cepat meresap, melindungi dan menjaga kelembapan kulit.</p>
+          <button onclick="tambahKeKeranjang('G2G Light Sunscreen Gel', 34000)">tambahkan ke keranjang</button>
+          <br>
+          <a href="produk/produk9.html" class="detail-link">Lihat Detail Produk</a>
+        </div>
+
+         <!-- Produk 10 -->
+        <div class="produk">
+          <img src="images/produk10.jpg" alt="Produk 10">
+          <h3>G2G Lip Serum</h3>
+          <p>Rp49.000</p>
+          <p>G2G Lip Serum Serum bibir mixberry yang melembapkan, menutrisi, dan beri efek glossy alami.</p>
+          <button onclick="tambahKeKeranjang('G2G Lip Serum', 49000)">tambahkan ke keranjang</button>
+          <br>
+          <a href="produk/produk10.html" class="detail-link">Lihat Detail Produk</a>
+        </div>
+      </section>
+
+      <section id="tentang-kami">
+        <h2>tentang-kami</h2>
+        <p>Official Store Faridah menjual produk skincare berkualitas,aman,dan terpercaya. Kami berkomitmen memberikan pelayanan terbaik untuk pelanggan kami.</p>
+      </section>
+<section id="keranjang">
+  <h2>Keranjang Belanja</h2>
+  <ul id="daftar-keranjang"></ul>
+  <p id="total-harga">Total: Rp0</p>
+  <button onclick="checkout()">Checkout</button>
+
+
+  <!-- FORM Checkout -->
+  <div id="form-checkout" style="display: none;">
+    <h3>Isi Data Pengiriman & Pembayaran</h3>
+    <label for="namaPembeli">Nama:</label><br>
+    <input type="text" id="namaPembeli" required><br><br>
+
+    <label for="alamatPembeli">Alamat:</label><br>
+    <textarea id="alamatPembeli" rows="4" required></textarea><br><br>
+
+    <label for="metodeBayar">Metode Pembayaran:</label><br>
+    <select id="metodeBayar">
+      <option value="COD">Bayar di Tempat (COD)</option>
+      <option value="Transfer">Transfer Bank</option>
+    </select><br><br>
+
+    <button onclick="prosesCheckout()">Konfirmasi Pesanan</button>
+  </div>
+</section>
+       
+    </section>
+
+     <section id="kontak">
+      <h2>Kontak Kami</h2>
+      <form>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" name="pesan" required></textarea>
+
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+
+
+
+  </main>
+
+
+  <footer>
+    <p>Hubungi kami di: sitifaridah071104@gmail.com | telepon: +6283878426362 |Alamat: Bandung, Jawa Barat , Indonesia </p>
+    <p>
+      <p>&copy; 2025 Hak Cipta Dilindungi. Dibuat oleh Siti Faridah </p>
+      <a href="https://wa.me/6283878426362" target="_blank">Chat WhatsApp</a> |
+      <a href="https://instagram.com/namatoko" target="_blank">Instagram Kami</a>
+    </p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
